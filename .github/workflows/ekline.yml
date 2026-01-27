@@ -1,0 +1,28 @@
+# EkLine documentation review workflow
+name: EkLine Documentation Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  push:
+    branches: [ main ]
+
+jobs:
+  ekline-doc-review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run EkLine review
+        uses: ekline-io/ekline-github-action@v6
+        with:
+          # Adjust these as needed:
+          content_dir: .
+          ek_token: ${{ secrets.EK_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          reporter: github-pr-review
+          filter_mode: added
+          exclude_directories: ./node_modules
+          exclude_files: ./README.md
+          debug: false
