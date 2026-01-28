@@ -1,4 +1,4 @@
-# PayWallex — Minimal Stripe-like prototype
+# PayWallex — Minmal Stripe-like prototype
 
 This is a minimal prototype (TypeScript + Express) implementing a small subset of Payment APIs:
 - Customers: create, retrieve, list
@@ -108,5 +108,6 @@ If you want, I can:
 - Implement Charges & Refunds,
 - Add OpenAPI docs and example Postman collection,
 - Or produce a Dockerfile for easy running.
+
 
 
