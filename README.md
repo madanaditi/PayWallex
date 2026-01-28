@@ -7,7 +7,7 @@ This is a minimal prototype (TypeScript + Express) implementing a small subset o
 - API key auth (Bearer)
 - In-memory store (no DB)
 - Webhook endpoint stub
-- smote change
+- smote chang
 
 ## Quick start
 
@@ -108,4 +108,5 @@ If you want, I can:
 - Implement Charges & Refunds,
 - Add OpenAPI docs and example Postman collection,
 - Or produce a Dockerfile for easy running.
+
 
