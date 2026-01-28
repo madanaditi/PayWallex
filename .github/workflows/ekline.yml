@@ -23,6 +23,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
           filter_mode: added
-          exclude_directories: ./node_modules
-          exclude_files: ./README.md
-          debug: false
